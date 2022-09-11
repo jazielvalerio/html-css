@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            div > p { /* o simbolo > informa que o paragrafo é filho da div*/
+                display: none; /* display diz o estado de algo, nesse caso com o valor none ele esconderá o paragrafo*/
+                    }
+            div:hover > p {
+                display: block; /* com o uso do hover + block ele mostrará o paragrafo*/
+                color: white;
+                background-color: red;
+                width: 300px;   
+                         }
+
+            div:hover { /* o div:hover faz com que mude o estado de algo, no caso ao passar o mouse, nesse caso ficará vermelho*/
+                color: red;
+                    }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1> <!-- hover é uma pseudo class -->
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div> <!-- div cria uma linha delimitada semelhante uma tabela -->
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <P>fim do exemplo</P>
+</body>
+</html>
